@@ -32,6 +32,7 @@ body {
     background-color: hsl(0, 0%, 100%);
     border: 1px solid black;
     border-radius: 15px;
+    overflow: scroll;
 }
 
 header {
@@ -56,12 +57,28 @@ header {
     display: flex;
 }
 
-
-
 main {
     padding: 0 1.5rem;
 }
 
+.ind-notification {
+    display: flex;
+    flex-direction: column;
+}
+
+.ind-notification img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.one-line {
+    display: flex;
+    align-items: center;
+}
+#picture-comment {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
