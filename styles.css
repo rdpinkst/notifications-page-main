@@ -23,12 +23,45 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: hsl(210, 60%, 98%);
 }
 
 #page {
     width: 70%;
     min-height: 70%;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid black;
+    border-radius: 15px;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.not-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(219, 85%, 26%);
+}
+
+.not-count span {
+    margin: 0.25 0.7rem;
+}
+
+.notifications {
+    display: flex;
+}
+
+
+
+main {
+    padding: 0 1.5rem;
+}
+
 
 
 
