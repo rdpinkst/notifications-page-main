@@ -63,22 +63,34 @@ main {
 
 .ind-notification {
     display: flex;
-    flex-direction: column;
 }
 
 .ind-notification img {
     height: 3.5rem;
     width: 3.5rem;
+    margin-right: 1rem;
 }
 
 .one-line {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    
 }
 #picture-comment {
     display: flex;
     justify-content: space-between;
 }
+.col-format {
+    display: flex;
+    flex-direction: column;
+}
 
-
+a {
+    text-decoration: none;
+    font-weight: 800;
+    color: hsl(219, 85%, 26%)
+}
+.time {
+    color: hsl(219, 14%, 63%);
+}
 
