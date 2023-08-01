@@ -47,15 +47,24 @@ header {
     justify-content: center;
     align-items: center;
     background-color: hsl(219, 85%, 26%);
+    height: 60%;
+    border-radius: 5px;
+    margin: auto 0 auto 1rem;
 }
 
 .not-count span {
     color: hsl(0, 0%, 100%);
     font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0.1rem 0.7rem;
 }
 
 .notifications {
     display: flex;
+}
+header  p {
+    color:hsl(219, 12%, 42%);
+    font-weight: 500;
 }
 
 main {
@@ -80,6 +89,7 @@ main {
 }
 .one-line p {
     color: hsl(219, 14%, 63%);
+    font-weight: 500;
 }
 .one-line span {
     font-weight: 800;
@@ -94,6 +104,9 @@ main {
 #picture-comment {
     display: flex;
     justify-content: space-between;
+}
+#picture-comment > img {
+    height: 4rem;
 }
 .col-format {
     display: flex;
