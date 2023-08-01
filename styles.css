@@ -50,7 +50,8 @@ header {
 }
 
 .not-count span {
-    margin: 0.25 0.7rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
 }
 
 .notifications {
@@ -63,6 +64,7 @@ main {
 
 .ind-notification {
     display: flex;
+    margin-bottom: 2rem;
 }
 
 .ind-notification img {
@@ -74,8 +76,21 @@ main {
 .one-line {
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
 }
+.one-line p {
+    color: hsl(219, 14%, 63%);
+}
+.one-line span {
+    font-weight: 800;
+    font-size: 1rem;
+    color: hsl(224, 21%, 14%);
+}
+.one-line span.post {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+}
+
 #picture-comment {
     display: flex;
     justify-content: space-between;
