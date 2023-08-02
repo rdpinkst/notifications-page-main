@@ -58,7 +58,9 @@ header {
     font-size: 1.25rem;
     margin: 0.1rem 0.7rem;
 }
-
+#all-read {
+    cursor: pointer;
+}
 .notifications {
     display: flex;
 }
@@ -74,6 +76,8 @@ main {
 .ind-notification {
     display: flex;
     margin-bottom: 2rem;
+    padding: 0.3rem;
+    border-radius: 5px;
 }
 
 .ind-notification img {
@@ -138,4 +142,15 @@ a {
 .description {
     margin-bottom: 0.2rem;
 }
-
+.private-message {
+    border: 1px solid hsl(219, 14%, 63%);
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.private-message p {
+    margin: 1rem;
+    color: hsl(219, 12%, 42%);
+}
+.change-background {
+    background: hsl(210, 60%, 98%);
+}
