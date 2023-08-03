@@ -78,6 +78,7 @@ main {
     margin-bottom: 2rem;
     padding: 0.3rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .ind-notification img {
