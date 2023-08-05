@@ -131,6 +131,7 @@ a {
     border-radius: 50%;
     background-color: hsl(1, 90%, 64%);
     margin-left: 0.5rem;
+    display: inline-block;
 }
 .one-line .description {
     display: flex;
@@ -153,4 +154,20 @@ a {
 }
 .change-background {
     background: hsl(210, 60%, 98%);
+}
+@media (max-width: 375px) {
+    .notifications h1 {
+        font-size: 20px;
+    }
+    #not-count span {
+        font-size: 1rem;
+    }
+    #page {
+        width: 100%;
+        min-height: 100vh;
+        font-size: 12px;
+    }
+    .description p > span {
+        font-size: 12px;
+    }
 }
