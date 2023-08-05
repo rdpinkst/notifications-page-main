@@ -155,6 +155,15 @@ a {
 .change-background {
     background: hsl(210, 60%, 98%);
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0.5rem;
+    background-color: hsl(210, 60%, 98%);
+}
+.description span:hover {
+    color: hsl(219, 85%, 26%);
+}
 @media (max-width: 375px) {
     .notifications h1 {
         font-size: 20px;
@@ -169,5 +178,15 @@ a {
     }
     .description p > span {
         font-size: 12px;
+    }
+    #picture-comment > img {
+        height: 3rem;
+    }
+    .ind-notification img {
+        height: 2rem;
+        width: 2rem;
+    }
+    .ind-notification {
+        margin-bottom: 1.5rem;
     }
 }

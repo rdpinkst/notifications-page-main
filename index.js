@@ -41,7 +41,7 @@ clearAll.addEventListener("click", event => {
 
 function clearDom(nodeClear) {
     nodeClear.classList.remove("change-background");
-    const dot = nodeClear.querySelector(".one-line .description div");
+    const dot = nodeClear.querySelector(".one-line .description .unread");
     dot.classList.remove("unread");
     dot.classList.add("read");
 }
