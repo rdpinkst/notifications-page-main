@@ -60,6 +60,9 @@ header {
 #all-read {
     cursor: pointer;
 }
+#all-read:hover {
+    color: hsl(219, 85%, 26%);
+}
 .notifications {
     display: flex;
 }
