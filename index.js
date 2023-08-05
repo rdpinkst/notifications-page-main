@@ -20,31 +20,31 @@ getAllArticles.forEach((notification, index) => {
     } 
 })
 
-console.log(unreadNodes)
 function clearNotification(event) {
-    event.currentTarget.classList.remove("change-background");
-    const dot = event.currentTarget.querySelector(".one-line .description div");
+    clearDom(event.currentTarget);
     count -= 1;
-    dot.classList.remove("unread");
-    dot.classList.add("read");
     countDOM.innerHTML = `<span>${count}</span>`;
+    unreadNodes = unreadNodes.filter(node => node !== event.currentTarget);
 }
 
 clearAll.addEventListener("click", event => {
     if(unreadNodes.length > 0) {
         unreadNodes.forEach(node => {
-            node.classList.remove("change-background");
-            console.log(node)
-            const dot = node.querySelector(".one-line .description div");
+            clearDom(node)
             count = 0;
-            dot.classList.remove("unread");
-            dot.classList.add("read");
             countDOM.innerHTML = `<span>${count}</span>`;
             node.removeEventListener("click", clearNotification);
         });
         unreadNodes = [];
     }
 })
+
+function clearDom(nodeClear) {
+    nodeClear.classList.remove("change-background");
+    const dot = nodeClear.querySelector(".one-line .description div");
+    dot.classList.remove("unread");
+    dot.classList.add("read");
+}
 
 
 
