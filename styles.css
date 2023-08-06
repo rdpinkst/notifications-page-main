@@ -113,7 +113,7 @@ main {
     justify-content: space-between;
 }
 #picture-comment > img {
-    height: 4rem;
+    height: 3.5rem;
 }
 .col-format {
     display: flex;
@@ -150,6 +150,9 @@ a {
     border: 1px solid hsl(219, 14%, 63%);
     border-radius: 5px;
     margin-top: 1rem;
+}
+.private-message:hover {
+    background-color: hsl(211, 68%, 94%);
 }
 .private-message p {
     margin: 1rem;
